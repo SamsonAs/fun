@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+from random import randrange
+
+total = 0
+for n in range(5):
+  side = randrange(1,6)
+  print("You rolled a ", side)
+  total += side
+
+print("TOTAL: ", total)
+
+if total <= 15:
+    print("You are not a Yahtzee Pirate")
+
+if total >= 16:
+    print("You are a Yahtzee Pirate")
